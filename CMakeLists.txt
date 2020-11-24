@@ -22,10 +22,13 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
-find_package(std_msg REQUIRED)
+#find_package(std_msg REQUIRED)
+
+
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/digital_state.msg"
-  "srv/read_state.srv"
+  "msg/DigitalState.msg"
+  "srv/ReadState.srv"
+  "msg/Num.msg"
  )
 
 
