@@ -27,8 +27,11 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DigitalState.msg"
-  "srv/ReadState.srv"
-  "msg/Num.msg"
+  "msg/RaspiConfig.msg"
+  "srv/PinStateRead.srv"
+  "srv/PinStateWrite.srv"
+  "srv/ConfigSet.srv"
+  "srv/ConfigRead.srv"
  )
 
 

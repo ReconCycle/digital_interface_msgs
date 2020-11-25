@@ -1,0 +1,6 @@
+uint8 position # Position of the signal that we are seting the state of
+bool value 
+---
+bool success  # If the value was set with no problem
+string error_msg #Source of problem
+

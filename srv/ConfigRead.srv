@@ -1,0 +1,3 @@
+bool read
+---
+digital_interface_msgs/RaspiConfig config

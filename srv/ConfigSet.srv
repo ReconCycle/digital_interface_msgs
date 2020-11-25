@@ -1,0 +1,3 @@
+digital_interface_msgs/RaspiConfig config
+---
+bool set
