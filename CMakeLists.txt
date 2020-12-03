@@ -18,6 +18,7 @@ add_message_files(
   FILES
   DigitalState.msg
   RaspiConfig.msg
+  OnePinConfig.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -32,8 +33,13 @@ PinStateWrite.srv
 generate_messages(
   DEPENDENCIES
   std_msgs
+  digital_interface_msgs
   # std_srvs
 )
 
-
-
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES robot_module_msgs
+ CATKIN_DEPENDS 
+#  DEPENDS system_lib
+)
