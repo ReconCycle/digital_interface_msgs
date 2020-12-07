@@ -5,11 +5,7 @@ project(digital_interface_msgs)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
   std_msgs
-  # std_srvs
-  genmsg 
   message_generation
 )
 
@@ -33,13 +29,15 @@ PinStateWrite.srv
 generate_messages(
   DEPENDENCIES
   std_msgs
-  digital_interface_msgs
-  # std_srvs
 )
 
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES robot_module_msgs
- CATKIN_DEPENDS 
+ CATKIN_DEPENDS message_runtime std_msgs
 #  DEPENDS system_lib
 )
+
+#include_directories(
+ # ${catkin_INCLUDE_DIRS}
+#)
