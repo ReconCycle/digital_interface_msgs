@@ -1,3 +1,5 @@
-uint8 position # Position of the signal that we are inquiring the state of
+
 ---
 digital_interface_msgs/DigitalState state
+bool success  # If the value was set with no problem
+string error_msg #Source of problem

@@ -1,1 +1,1 @@
-ROS2 version of digital interface msgs
+ROS1 version of digital interface msgs

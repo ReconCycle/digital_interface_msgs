@@ -1,13 +1,10 @@
-string config_name "Default"  
+string config_name 
 
-string hardware_type "Raspberry 4"  #Config template is for this hardware chip
+string hardware_type #Config template is for this hardware chip
 
 
-#Bool value if pin is defined as digital input output
-
-bool[26] digital_input_enable [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-bool[26] digital_output_enable [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
+# configs for each pin
+digital_interface_msgs/OnePinConfig[26] pin_configs 
 
 
 # Handy names for when the signal is in high state

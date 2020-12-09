@@ -1,3 +1,4 @@
 digital_interface_msgs/RaspiConfig config
 ---
-bool set
+bool success
+string error
