@@ -23,6 +23,7 @@ add_service_files(FILES
 PinStateWrite.srv
   ConfigSet.srv
  ConfigRead.srv
+ PWMWrite.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
