@@ -1,5 +1,6 @@
 
-float32 value  #length of up signal period form 0 to 1
+float32 value  #angle value
+float32 time  #duration of movment
 ---
 bool success  # If the value was set with no problem
 string error_msg #Source of problem
