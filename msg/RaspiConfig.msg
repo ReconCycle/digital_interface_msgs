@@ -4,7 +4,7 @@ string hardware_type #Config template is for this hardware chip
 
 
 # configs for each pin
-digital_interface_msgs/OnePinConfig[26] pin_configs 
+digital_interface_msgs/OnePinConfig[28] pin_configs 
 
 
 # Handy names for when the signal is in high state
